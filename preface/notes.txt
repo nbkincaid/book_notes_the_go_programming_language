@@ -1,0 +1,19 @@
+"C for the 21st Century"
+
+Simplicity is the best decision for the long run and takes effort up front and during.
+
+Backwards compatibility is guaranteed.
+
+Creating a goroutine is cheap in terms of memory and creating millions is practical.
+
+The standard library comes "batteries included".
+
+No classes/hierarchies/inheritance.
+
+official website: https://golang.org
+
+tour.golang.org contains short lessons
+
+the source code for the standard library is at https://golang.org/pkg
+
+the source code for major examples in this book are at gopl.io

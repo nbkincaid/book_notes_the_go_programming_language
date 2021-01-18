@@ -1,0 +1,74 @@
+this is a tour of the basic components of go
+
+1.1 HELLO, WORLD
+
+the `go` command has a number of subcommands to perform different functions
+
+`go run` compiles the source code and runs the resulting executable
+
+`go build` compiles the source code and writes the resulting executable to disk
+
+go code is organized into packages (similar to libraries and modules), packages consist of one or more .go source files
+in the same directory, each source file begins with a package declaration as so `package {{packageName}}`
+
+the go standard library has over 100 packages for common tasks
+
+the `fmt` package contains the the basic output functions
+
+`package main` and `function main` are special because together they define the standalone program where execution
+begins
+
+a program will not compile if there are missing imports are extra ones
+
+gofmt rewrites the code with standard formatting
+
+the go tool is the usual way to download and build packages, run tests, show docs, etc
+
+1.2 Command-Line Arguments
+
+command line arguments are available to a program via os.Args and comes as a slice of strings
+
+each type has a specific "0" value that variables are implicitly initialized if they are not explicitly initialized
+
+each arithmetic and logical operator has a corresponding assignment operator
+
+the for loop is the only loop statement in go // the statements in a for loop: initialization; condition; post
+
+unused variables won't compile, so the underscore, or "blank identifier" is used in the case we can ignore a return
+value
+
+multiple ways to declare a string variable:
+ s := ""
+ var s string
+ var s = ""
+ var s string = ""
+
+duplicate line for dup go programs
+duplicate line for dup go programs
+
+functions and other package-level entities may be declared in any order
+
+a goroutine is a concurrent function execution
+
+a channel is a communication mechanism that allows one goroutine to pass values to another goroutine
+
+the net/http package is used for standing up web servers and sending requests
+
+use an ampersand after the go function call to run the process in the in background
+
+mutex locks must be used for shared variables to guarantee that only one goroutine has access at a time
+
+switch statements execute the first match and don't fall through
+
+named types => in go you can declare types and name them
+
+pointers are values that contain the address of a variable
+
+methods can be assigned to any type
+
+interfaces let you treat different types the same way, given they satisfy the interface
+
+packages are available at https://golang.org/pkg, check these out with `go doc`
+
+it is best practice to comment each declaration
+
